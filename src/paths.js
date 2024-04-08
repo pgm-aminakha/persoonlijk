@@ -1,0 +1,9 @@
+import * as path from "path";
+import dotenv from "dotenv";
+dotenv.config();
+//const for paths
+
+export const SOURCE_PATH = path.resolve("src");
+export const VIEWS_PATH = path.resolve(SOURCE_PATH, "views");
+export const PUBLIC_PATH = path.resolve(SOURCE_PATH, "public");
+export const PORT = process.env.PORT || 3000;
