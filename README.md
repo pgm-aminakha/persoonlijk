@@ -1,6 +1,6 @@
-# Info
+# Info over project
 
-Mijn website gaat over de user story voor mijn sport calishtanics. Ik zal een test website maken die gemaakt is om sporters locaties toont van sportzalen of buitensportparken.
+Mijn website richt zich op de gebruikerservaring van mijn sport, calisthenics. Ik zal een testwebsite maken die sporters de locaties van sportscholen of buitenfitnessparken laat zien.
 
 ## Gebruikte packages
 
