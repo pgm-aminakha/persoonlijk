@@ -1,0 +1,15 @@
+<input
+  type="{{type}}"
+  name="{{name}}"
+  id="{{id}}"
+  value="{{value}}"
+  placeholder="{{placeholder}}"
+/>
+{{#if err}}
+  <div class="error-container">
+    <div class="arrow-up"></div>
+    <p>
+      {{err}}
+    </p>
+  </div>
+{{/if}}

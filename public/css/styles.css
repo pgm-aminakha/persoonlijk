@@ -8,6 +8,13 @@ body {
   margin: 0 auto;
 }
 
+.container--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* //---------------HEADER--------------// */
 
 header nav {
@@ -36,4 +43,53 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+/* //---------------Login--------------// */
+
+.logo {
+  width: 15rem;
+}
+
+.loginRegister form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.loginRegister .form__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* //---------------ERROR--------------// */
+.error-container {
+  background: hsl(0.32deg 79.4% 87.69%);
+  color: hsl(0.32deg 81.4% 45.69%);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow-up {
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 23px solid hsl(0.32deg 79.4% 87.69%);
+  position: absolute;
+  margin: 0 auto;
+  bottom: -1.875rem;
+  right: 49%;
+}
+
+.error-container .arrow-up {
+  top: -7px;
+  right: 42%;
 }

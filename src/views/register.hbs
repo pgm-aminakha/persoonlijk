@@ -1,0 +1,29 @@
+<main class="container container--flex">
+  <div class="logo">
+    <figure>
+      <img src="/assets/logo/svg/logo-black.svg" alt="svg" />
+    </figure>
+  </div>
+  <div class="loginRegister">
+    {{#if flash.message}}
+      <div class="error-container {{flash.type}}">
+        {{flash.message}}
+      </div>
+    {{/if}}
+    <h1>
+      Register
+    </h1>
+    <form action="/register" method="POST">
+      {{#register}}
+        <label for="">
+          {{this.label}}
+        </label>
+        {{> formInput this}}
+      {{/register}}
+      <div class="form__button">
+        <button name="action" value="create" type="submit">Register</button>
+      </div>
+  </div>
+  <p>or</p>
+  <a href="/login">login</a>
+</main>

@@ -28,3 +28,5 @@ class user extends Model {
         };
     }
 }
+
+export default user;
